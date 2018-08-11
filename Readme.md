@@ -11,6 +11,7 @@ for this raccoon :
 
 la_muse style :
 ![alt text](https://raw.githubusercontent.com/mashmawy/FastStyleTransfer/master/FastStyleTransfer/images/la_muse.png)
+
 wave style:
 ![alt text](https://raw.githubusercontent.com/mashmawy/FastStyleTransfer/master/FastStyleTransfer/images/wave.jpg)
 
