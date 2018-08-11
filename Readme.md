@@ -3,7 +3,7 @@ C# Demo of Fast Style Transfer using AlbiruniML library with pretrained styles.
 it is based on the work of reiinakano
 https://github.com/reiinakano/fast-style-transfer-deeplearnjs
 
-#What is Fast Style Transfer
+# What is Fast Style Transfer
 a neural network attempts to "draw" one picture, the Content, in the style of another, the Style.
 for this raccoon :
 
