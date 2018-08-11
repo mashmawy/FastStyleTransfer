@@ -1,4 +1,4 @@
-﻿# FastStyleTransfer
+# FastStyleTransfer
 C# Demo of Fast Style Transfer using AlbiruniML library with pretrained styles.
 it is based on the work of reiinakano
 https://github.com/reiinakano/fast-style-transfer-deeplearnjs
