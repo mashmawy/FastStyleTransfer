@@ -127,10 +127,15 @@ namespace FastStyleTransfer
 
         private void Transfer()
         {
+
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
             this.imageTensor.keep();
 
             var p = tnet.Predict(this.imageTensor);
-            this.Invoke(new FormInvokWithParam(LoadTensor), p); 
+            this.Invoke(new FormInvokWithParam(LoadTensor), p);
+            sw.Stop();
+            MessageBox.Show(sw.ElapsedMilliseconds.ToString());
         }
 
         private void FastStyleTransferDemo_Load(object sender, EventArgs e)
