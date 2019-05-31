@@ -21,9 +21,9 @@
             Me.SrcPictureBox = New System.Windows.Forms.PictureBox()
             Me.progressBar1 = New System.Windows.Forms.ProgressBar()
             Me.label1 = New System.Windows.Forms.Label()
-            (CType((Me.StylePictureBox), System.ComponentModel.ISupportInitialize)).BeginInit()
-            (CType((Me.DisPictureBox), System.ComponentModel.ISupportInitialize)).BeginInit()
-            (CType((Me.SrcPictureBox), System.ComponentModel.ISupportInitialize)).BeginInit()
+            CType(Me.StylePictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.DisPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.SrcPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             Me.SaveButton.Enabled = False
             Me.SaveButton.Location = New System.Drawing.Point(672, 295)
@@ -108,9 +108,9 @@
             Me.Text = "Fast Style Transfer"
             AddHandler Me.FormClosing, New System.Windows.Forms.FormClosingEventHandler(AddressOf Me.FastStyleTransferDemo_FormClosing)
             AddHandler Me.Load, New System.EventHandler(AddressOf Me.FastStyleTransferDemo_Load)
-            (CType((Me.StylePictureBox), System.ComponentModel.ISupportInitialize)).EndInit()
-            (CType((Me.DisPictureBox), System.ComponentModel.ISupportInitialize)).EndInit()
-            (CType((Me.SrcPictureBox), System.ComponentModel.ISupportInitialize)).EndInit()
+            CType((Me.StylePictureBox), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.DisPictureBox), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.SrcPictureBox), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
         End Sub
