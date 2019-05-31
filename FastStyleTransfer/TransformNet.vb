@@ -50,19 +50,7 @@ Namespace FastStyleTransfer
                 Dim size As Integer = item.Value.shape(0)
 
                 For i As Integer = 1 To item.Value.shape.Length - 1
-                                        ''' Cannot convert AssignmentExpressionSyntax, System.ArgumentOutOfRangeException: Exception of type 'System.ArgumentOutOfRangeException' was thrown.
-''' Parameter name: op
-''' Actual value was MultiplyAssignmentStatement.
-'''    at ICSharpCode.CodeConverter.Util.VBUtil.GetExpressionOperatorTokenKind(SyntaxKind op)
-'''    at ICSharpCode.CodeConverter.VB.NodesVisitor.MakeAssignmentStatement(AssignmentExpressionSyntax node)
-'''    at ICSharpCode.CodeConverter.VB.NodesVisitor.VisitAssignmentExpression(AssignmentExpressionSyntax node)
-'''    at Microsoft.CodeAnalysis.CSharp.Syntax.AssignmentExpressionSyntax.Accept[TResult](CSharpSyntaxVisitor`1 visitor)
-'''    at Microsoft.CodeAnalysis.CSharp.CSharpSyntaxVisitor`1.Visit(SyntaxNode node)
-'''    at ICSharpCode.CodeConverter.VB.CommentConvertingNodesVisitor.DefaultVisit(SyntaxNode node)
-''' 
-''' Input: 
-'''                     size *= item.Value.shape[i]
-''' 
+                    size *= item.Value.shape(i)
                 Next
 
                 If size <> s.Length Then
