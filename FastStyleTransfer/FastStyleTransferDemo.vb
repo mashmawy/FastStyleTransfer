@@ -29,16 +29,16 @@ Namespace FastStyleTransfer
             Dim destImage = New Bitmap(width, height)
             destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution)
 
-            Using graphics = Graphics.FromImage(destImage)
-                graphics.CompositingMode = CompositingMode.SourceCopy
-                graphics.CompositingQuality = CompositingQuality.HighQuality
-                graphics.InterpolationMode = InterpolationMode.HighQualityBilinear
-                graphics.SmoothingMode = SmoothingMode.HighQuality
-                graphics.PixelOffsetMode = PixelOffsetMode.HighQuality
+            Using lGraphics = Graphics.FromImage(destImage)
+                lGraphics.CompositingMode = CompositingMode.SourceCopy
+                lGraphics.CompositingQuality = CompositingQuality.HighQuality
+                lGraphics.InterpolationMode = InterpolationMode.HighQualityBilinear
+                lGraphics.SmoothingMode = SmoothingMode.HighQuality
+                lGraphics.PixelOffsetMode = PixelOffsetMode.HighQuality
 
-                Using wrapMode = New ImageAttributes()
-                    wrapMode.SetWrapMode(WrapMode.TileFlipXY)
-                    graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapMode)
+                Using lWrapMode = New ImageAttributes()
+                    lWrapMode.SetWrapMode(WrapMode.TileFlipXY)
+                    lGraphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, lWrapMode)
                 End Using
             End Using
 
