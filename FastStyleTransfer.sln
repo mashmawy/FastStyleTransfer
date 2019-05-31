@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastStyleTransfer", "FastStyleTransfer\FastStyleTransfer.csproj", "{4F3DCCAE-EB90-4D0D-8B44-C4C536B196DE}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FastStyleTransfer", "FastStyleTransfer\FastStyleTransfer.vbproj", "{FD194DC5-27C8-02FC-091C-0EBB5426A27E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{80793B09-2C70-4607-9A65-8F52DFD6E37F}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,10 +16,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4F3DCCAE-EB90-4D0D-8B44-C4C536B196DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4F3DCCAE-EB90-4D0D-8B44-C4C536B196DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4F3DCCAE-EB90-4D0D-8B44-C4C536B196DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4F3DCCAE-EB90-4D0D-8B44-C4C536B196DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD194DC5-27C8-02FC-091C-0EBB5426A27E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD194DC5-27C8-02FC-091C-0EBB5426A27E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD194DC5-27C8-02FC-091C-0EBB5426A27E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD194DC5-27C8-02FC-091C-0EBB5426A27E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
