@@ -7,7 +7,7 @@ Imports System.Windows.Forms
 Namespace FastStyleTransfer
     Friend Module Program
         <STAThread>
-        Private Sub Main()
+        Public Sub Main()
             Application.EnableVisualStyles()
             Application.SetCompatibleTextRenderingDefault(False)
             Application.Run(New FastStyleTransferDemo())
