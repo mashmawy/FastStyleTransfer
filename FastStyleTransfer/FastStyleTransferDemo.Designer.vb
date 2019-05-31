@@ -1,5 +1,5 @@
 ﻿Namespace FastStyleTransfer
-    Friend Partial Class FastStyleTransferDemo
+    Partial Public Class FastStyleTransferDemo
         Private components As System.ComponentModel.IContainer = Nothing
 
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
