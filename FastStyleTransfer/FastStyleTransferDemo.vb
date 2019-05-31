@@ -122,7 +122,7 @@ Namespace FastStyleTransfer
             sw.Start()
             Me.imageTensor.keep()
             Dim p = tnet.Predict(Me.imageTensor)
-            Me(New FormInvokWithParam(AddressOf LoadTensor), p)
+            Me.Invoke(New FormInvokWithParam(AddressOf LoadTensor), p)
             sw.[Stop]()
             MessageBox.Show(sw.ElapsedMilliseconds.ToString())
         End Sub
@@ -140,7 +140,7 @@ Namespace FastStyleTransfer
         End Sub
 
         Private Sub tnet_ReportProgress(ByVal progress As Integer)
-            Me(New FormInvokWithParam(AddressOf UpdateProgress), progress)
+            Me.Invoke(New FormInvokWithParam(AddressOf UpdateProgress), progress)
         End Sub
 
         Private Sub UpdateProgress(ByVal value As Object)
